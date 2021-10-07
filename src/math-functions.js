@@ -56,7 +56,17 @@ how to do this. However, you may continue to use the + operator for string conca
 */
 
 export function sumAndMultiplyThreeNumbers(a, b, c) { //eslint-disable-line
-
+    const sumOf2 = sum(a, b)[0];  
+    //console.log(sumOf2);
+    const sumOf3 = sum(sumOf2, c)[0];
+    //console.log(sumOf3);
+    const multOf2 = multiply(a, b)[0];
+   //console.log(multOf2);
+    const multOf3 = multiply(multOf2, c)[0];
+    //console.log(multOf3);
+    const str3 = `${a} and ${b} and ${c} sum to ${sumOf3}.`;
+    const str4 = `The product of ${a} and ${b} and ${c} is ${multOf3}.`;
+    return [sumOf3, multOf3, str3, str4];
 }
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
@@ -77,9 +87,9 @@ have to be resourceful to figure out how to do this. However, you may continue
 to use the + operator for string concatenation.
 */
 
-export function sumArrayWithThreeNumbers(sumArr) {
+//export function sumArrayWithThreeNumbers(sumArr) {
 
-}
+//}
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 // Don't forget to create a new branch for your work on the next question!
@@ -100,9 +110,9 @@ This function should handle an array containing three elements. However,
 you may continue to use the + operator for string concatenation.
 */
 
-export function multiplyArrayWithThreeNumbers(multArr) { //eslint-disable-line
+//export function multiplyArrayWithThreeNumbers(multArr) { //eslint-disable-line
 
-}
+//}
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
@@ -121,9 +131,9 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 This function should be dynamic, accepting an array of any length.
 */
 
-export function multiplyAnyArray(dynamicArray) { //eslint-disable-line
+//export function multiplyAnyArray(dynamicArray) { //eslint-disable-line
 
-}
+//}
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 // You're done! Submit the link to the repo following the instructions in Canvas.
