@@ -87,10 +87,15 @@ have to be resourceful to figure out how to do this. However, you may continue
 to use the + operator for string concatenation.
 */
 
-//export function sumArrayWithThreeNumbers(sumArr) {
-
-//}
-
+export function sumArrayWithThreeNumbers(sumArr) {
+    const numArray = [2, 3, 4];
+    const sum2 = sum(numArray[0], numArray[1])[0];
+    const sumArray3 = sum(sum2, numArray[2])[0];
+    //console.log(sumArray3)
+    return [sumArray3, `2,3,4 was passed in as an array of numbers, and ${sumArray3} is their sum.`];
+    
+}
+//I FORGOT TO MAKE A NEW BRANCH, I JUST ADDED IT NOW!
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 // Don't forget to create a new branch for your work on the next question!
 
