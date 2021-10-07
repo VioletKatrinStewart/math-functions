@@ -16,6 +16,7 @@ export function sum(a, b) {
     const str = `The sum of ${a} and ${b} is ${sum}.`;
     return [sum, str];
 }
+//i forked the branch after julie pushed up this function so I already have this test passing! for the sake of the lab I am going to merge and make a new branch for problem two even though it feels weird to make a commit when I didnt really do anything
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 // Don't forget to create a new branch for your work on the next question!
